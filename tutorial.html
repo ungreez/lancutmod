@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Lancut Modification</title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<link rel="shortcut icon" href="img/sochaczew.png" />	
+</head>
+<body>
+	<div id='fotka'>
+	<center><div><img src='img/0.jpg' id='img'></center>
+		<script>
+			curIndex = 0;
+			var imgArray = ['img/0.jpg','img/1.jpg','img/10.jpg','img/3.jpg','img/9.jpg','img/5.jpg','img/8.jpg','img/7.jpg','img/6.jpg','img/2.jpg','img/4.jpg']
+			function slideShow() {
+				document.getElementById('img').className += "fadeOut";
+				setTimeout(function() {
+				document.getElementById('img').src = imgArray[curIndex];
+				document.getElementById('img').className = "";
+				},800);
+				curIndex++;
+			if (curIndex == imgArray.length){
+				curIndex = 0; 
+			}
+			setTimeout(slideShow, 10000);
+			}
+			slideShow();
+			function showImage(img){
+				document.getElementById('bigImg').src = img;
+				document.getElementById('bigImgDiv').style.display = 'block';	
+			}
+		</script>
+	</div></div>
+	<div id='przyciski'>
+		<a href='poradnik.html'><div id='przycisk'>
+			<b>Poradnik</b>
+		</div></a>
+		<div id='aktywny'>
+			<b>Tutorial</b>
+		</div>
+		<a href='jednostki.html'><div id='przycisk'>
+			<b>Jednostki</b>
+		</div></a>
+		<a href='autorzy.html'><div id='przycisk'>
+			<b>Autorzy</b>
+		</div></a>
+	</div><br><div style='width: 70%; margin-left: 6%;'>
+	<div id='kontener' style='text-align: center;'>
+		<div id="bigImgDiv" style='position: fixed; cursor: pointer; width: 70%; bottom: 80px;' onclick="this.style.display='none'">
+        <img id="bigImg"  style='border-radius: 6px; width: 90%; float: left;'/>
+        </div>
+		<b style='color: #4682B4; font-size: 29px;'>Tutorial</b><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>1. </b><b style='color: #999999;'>General</b><br></div>
+		To install new interface move Interfejs Interface folder content to Data folder.<br><br>
+		<img src="img/p15.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Recommended game difficulty - <b style='color: #4682B4;'>medium</b>.<br><br>
+		To alarm firefighters you need to select the dispatcher.<br><br>
+		<img src="img/p1.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		To send vehicles you want, you need to select their icons and click on the bell.<br>
+		1. Sends firefighters back to their rooms.<br>
+		2. Opens/closes roof.<br>
+		3. Turns on/off lights.<br><br>
+		<img src="img/p2.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Before driving the vehicle, you need to turn on the engine by using command 1. Command 2 is the manual siren. By using command 3 you can equip firefighters with SCBA. Command 4 serves to checking water level and command 5 to set up lightmast. <br><br>
+		<img src="img/p10.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Shutters in vehicles will come up automatically. To close them you need to select vehicle and click on firefighter.<br><br>
+		<img src="img/p66.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		The same thing is in case of ambulances. To close the door you need to select vehicle and click on paramedic.<br><br>
+		<img src="img/p19.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		To alarm paramedics you need to select ambulance on the map and click on the bell. R01 06 ambulance can be alarmed only between 7AM-11PM.<br><br>
+		<img src="img/p4.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		When you have mission with suicide attempt you need to send ladder vehicle or 491[R]90. Those vehicles have jumppad.<br><br>
+		<img src="img/p14.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		When alarming vehicles from outside the map, you need to click again on the target.<br><br>
+		<img src="img/p24.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>2. </b><b style='color: #999999;'>Equipment</b><br></div>
+		1. Spineboard. You can use it on victim.<br>
+		2. Sorbent. It's backfilling the oil stains.<br>
+		3. Broom. It serves to sweeping backfilled oil stains and branches in falled tree event.<br>
+		4. Tłumica. It serves to supress grass fires.<br>
+		5. Medical bag. Firefighters can treat victims with it.<br><br>
+		<img src="img/p5.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		6. Traffic cone. You can equip a firefighter with it and then click on the road. Firefighter will set up a cone. You can pick up cones and put them back to the vehicle.<br>
+		7. Glas-master. You can cut windows in jammed wrecks with it.<br>
+		8. Stabilization bricks. You can use it on jammed wreck.<br>
+		9. Pump. It serves to pump out the water in flooding mission.<br><br>
+		<img src="img/p55.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Hooligan. Replaces axe.<br>
+		2. Medium foam branch. You can extinguish with foam by using it.<br>
+		3. SCBA breathing on/off. When you turn it on, you will have air level icon in equipment. You can fill air in 491[R]50 vehicle.<br><br>
+		<img src="img/p8.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Medical bag. You need to equip a paramedic with it to treat victims.<br>
+		2. Defibrillator. You can use it on a victim. After usage you need to pick it up and put it back to the vehicle.<br><br>
+		<img src="img/p18.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		To put down equipment you need to select firefighter or paramedic and then click on the vehicle. If you want to put down firehose, you need to <b style='color: #4682B4;'>hold left shift</b>.<br><br>
+		<img src="img/p21.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Sets up the screen.<br>
+		2. Warning vest.<br><br>
+		<img src="img/p3.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>3. </b><b style='color: #999999;'>Fire</b><br></div>
+		To extinguish fire first you need to turn on pump. You need to select firefighter and click on the vehicle but only when vehicle has firehose attached. When firefighter leave pump, it will automatically stop.<br>
+		When you want to gear up or leave SCBA you need to select firefighter and click on vehicle by holding <b style='color: #4682B4;'>left shift</b>. Then you can turn on SCBA breathing. If you want to recharge air you can just leave SCBA and put it on again, send another firefighters or use 491[R]50 vehicle. Firefighter will go and recharge air. Air is reducing by 20%, so you will not see instantly that air is reducing.<br><br>
+		<img src="img/p12.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Every vehicle has it own water level. You need to make water supply, so it won't fall to 0. You can do it by using hydrant. You need to attach firehose to hydrant and then to vehicle. Next you need to activate hydrant by selecting firefighter and clicking on hydrant. When you want to detach this hose from vehicle, first you must deactivate hydrant by doing the same thing.
+		You can also do water supply from another vehicle. You need to detach a hose from vehicle with same type of firefighter that attached a hose. If you can't detach a hose try with other type of firefighter.<br><br>
+		<img src="img/p11.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		If you want to extinguish with foam, you need to gear up firefighter with SCBA. Then attach firehose to vehicle and select foam branch from equipment. Now when you will extinguish car or something, foam will come up but only when you tell firefighter to extinguish. If he will do it automaticly, there will be no foam.<br><br>
+		<img src="img/p9.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		You can unhook the battery in extinguished vehicles. Open hood with a hooligan and unhook the battery.<br><br>
+		<img src="img/p17.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Command 1 is wye, command 2 puts down hose, so you can attach another hose. You can pick up wye or hose only with type of firefighter that installed it. So when you put wye with firefighter with SCBA, you need firefighter with SCBA to pick that up. If you can't pick up wye or detach hose, try with firefighter with different gear type or SCBA.<br><br>		
+		<img src="img/p13.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<b style='color: #4682B4;'>If you want to attach hose to vehicle, click on cabin. In some vehicles clicking at their backs may not work.</b><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>4. </b><b style='color: #999999;'>Car accidents</b><br></div>		
+		If you have car accident, first thing you should do is to unhook the battery. To do that select firefighter and click on wreck. If vehicle has enclosed person in it, you can cut windows. To do that select glas-master from equipment and click on wreck. Also you can use stabilization bricks on wreck.<br><br>
+		<img src="img/p16.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		When you have dead person choose paramedic and click on body. Victim will be covered with black bag. When you do it mission won't be failed. Then you can pick body with caravan.<br><br>
+		<img src="img/p23.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		In case of car collision you can't cut wrecks with jaws. When you have it you need to unhook batteries, clean oil stains and pick wrecks with car carrier.<br><br>
+		<img src="img/p95.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		In case of torn branch you need to install ladder vehicle on the tree, enter the basket with firefighter equipped with chainsaw and cut branch.<br><br>
+		<img src="img/p25.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		In case of hazmat mission you need to call 471[R]64 hazmat vehicle, put a tank on the container and pump substance with drum pump.<br>
+		1. Hazmat suit.<br>
+		2. Drum pump.<br>
+		3. Tank.<br><br>
+		<img src="img/p71.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br>
+		<img src="img/p72.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		In case of car accidents and oil stains you can pump oil from trucks.<br><br>
+		<img src="img/p73.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>		
+	
+	</div>
+	</div></div>
+	<div id='prawa'>
+		<b style='color: #4682B4; font-size: 20px;'>Linki</b><br>
+		<hr style='width: 65%; float: left;'>
+		<br><br>
+		<a href='https://www.facebook.com/sochaczewmod/'><img src='img/sochofb.png' width='60%'></a><br><br>
+		<a href='https://www.youtube.com/user/qretys'><img src='img/yt.png' width='60%'></a><br><br>
+		<a href='http://piecki-mod.prv.pl/sochaczew/'><img src='img/socho.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/zolynia/'><img src='img/zolyn.png' width='60%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/'><img src='img/pmog.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='https://www.facebook.com/groups/557312141062063/'><img src='img/fb.png' width='60%'></a><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Filmy</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/rsV2GvT5ev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/mZoT6Ek7jO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/3b0fanvJqtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/1v5jmY-5AXk?si=Bdootbk6iQKdh-W9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Download</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/8-abwZF4P0w?si=MV80j5h0rRvcSOZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	</div>
+	<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	<div id='stopka'>
+		<img src='img/lancut.png' width='30px' style='float: left; margin-left: 10px;'>
+		<b style='color: #999999'>Łańcut</b> <b style='color: #4682B4'>Modification</b>
+	</div>
+</body>
+</html>

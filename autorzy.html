@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Lancut Modification</title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<link rel="shortcut icon" href="img/sochaczew.png" />	
+</head>
+<body>
+	<div id='fotka'>
+	<center><div><img src='img/0.jpg' id='img'></center>
+		<script>
+			curIndex = 0;
+			var imgArray = ['img/0.jpg','img/1.jpg','img/10.jpg','img/3.jpg','img/9.jpg','img/5.jpg','img/8.jpg','img/7.jpg','img/6.jpg','img/2.jpg','img/4.jpg']
+			function slideShow() {
+				document.getElementById('img').className += "fadeOut";
+				setTimeout(function() {
+				document.getElementById('img').src = imgArray[curIndex];
+				document.getElementById('img').className = "";
+				},800);
+				curIndex++;
+			if (curIndex == imgArray.length){
+				curIndex = 0; 
+			}
+			setTimeout(slideShow, 10000);
+			}
+			slideShow();
+			function showImage(img){
+				document.getElementById('bigImg').src = img;
+				document.getElementById('bigImgDiv').style.display = 'block';	
+			}
+		</script>
+	</div></div>
+	<div id='przyciski'>
+		<a href='poradnik.html'><div id='przycisk'>
+			<b>Poradnik</b>
+		</div></a>
+		<a href='tutorial.html'><div id='przycisk'>
+			<b>Tutorial</b>
+		</div></a>
+		<a href='jednostki.html'><div id='przycisk'>
+			<b>Jednostki</b>
+		</div></a>
+		<div id='aktywny'>
+			<b>Autorzy</b>
+		</div>
+	</div><br><div style='width: 70%; margin-left: 6%;'>
+	<div id='kontener' style='text-align: center;'>
+		<div id="bigImgDiv" style='position: fixed; cursor: pointer; width: 70%; bottom: 80px;' onclick="this.style.display='none'">
+        <img id="bigImg"  style='border-radius: 6px; width: 90%; float: left;'/>
+        </div>
+		<b style='color: #4682B4; font-size: 29px;'>Autorzy</b><br><br><br>
+		<div style='text-align: left; font-size: 17px;'><b style='color: #4682B4;'>Piotr Pawlikowski (Ungreez)   </b><b style='color: #999999;'>  Lead designer, skrypty, modele, oświetlenie, dźwięki, grafiki</b><br><br>
+		<b style='color: #4682B4;'>Dawid Dębski (Debol)   </b><b style='color: #999999;'>  Mapa</b><br><br>
+		Autorzy różnych rzeczy użytych w modzie (modele, skrypty):<br><br>
+		-sebek1994<br>
+		-firechef998<br>
+		-Gorzów Modification Team<br>
+		-PL Mod Team<br>
+		-Wegberg Mod Team<br>
+		-Carman<br>
+		-Gagar<br>
+		-Hoppah<br>
+		-Paulo ve<br>
+		-Keano<br>
+		-stasiek2012<br>
+		-Chidea<br>
+		-WitchDoctor<br>
+		-David Färber<br>
+		-Boogie Man<br>
+		-Grisu83<br>
+		-a-rescue<br>
+		-martijntjuh<br>
+		-Agerskov Modification Team<br>
+		-Flkalley<br>
+		-skaihof<br>
+		-VPI<br>
+		-Wooder<br>
+		-Stormi<br>
+		-David<br>
+		-masterphill.lu<br>
+		-Tecprofi<br>
+		-dnm<br>
+		-Zagłębie Mod Team<br>
+		-Wieliczka Mod<br>
+		-Duisburg Modifikation<br><br>
+		Lista autorów może być i pewnie jest niepełna.<br><br><br>
+		Music by: <br><br><a href='https://soundcloud.com/gregnoblin'><img src='img/ro.png' width='8%'></a></div>
+	
+	</div>
+	</div></div>
+	<div id='prawa'>
+		<b style='color: #4682B4; font-size: 20px;'>Linki</b><br>
+		<hr style='width: 65%; float: left;'>
+		<br><br>
+		<a href='https://www.facebook.com/sochaczewmod/'><img src='img/sochofb.png' width='60%'></a><br><br>
+		<a href='https://www.youtube.com/user/qretys'><img src='img/yt.png' width='60%'></a><br><br>
+		<a href='http://piecki-mod.prv.pl/sochaczew/'><img src='img/socho.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/zolynia/'><img src='img/zolyn.png' width='60%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/'><img src='img/pmog.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='https://www.facebook.com/groups/557312141062063/'><img src='img/fb.png' width='60%'></a><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Filmy</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/rsV2GvT5ev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/mZoT6Ek7jO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/3b0fanvJqtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/1v5jmY-5AXk?si=Bdootbk6iQKdh-W9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Download</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/8-abwZF4P0w?si=MV80j5h0rRvcSOZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	</div>
+	<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	<div id='stopka'>
+		<img src='img/lancut.png' width='30px' style='float: left; margin-left: 10px;'>
+		<b style='color: #999999'>Łańcut</b> <b style='color: #4682B4'>Modification</b>
+	</div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Lancut Modification</title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<link rel="shortcut icon" href="img/sochaczew.png" />	
+</head>
+<body>
+	<div id='fotka'>
+	<center><div><img src='img/0.jpg' id='img'></center>
+		<script>
+			curIndex = 0;
+			var imgArray = ['img/0.jpg','img/1.jpg','img/10.jpg','img/3.jpg','img/9.jpg','img/5.jpg','img/8.jpg','img/7.jpg','img/6.jpg','img/2.jpg','img/4.jpg']
+			function slideShow() {
+				document.getElementById('img').className += "fadeOut";
+				setTimeout(function() {
+				document.getElementById('img').src = imgArray[curIndex];
+				document.getElementById('img').className = "";
+				},800);
+				curIndex++;
+			if (curIndex == imgArray.length){
+				curIndex = 0; 
+			}
+			setTimeout(slideShow, 10000);
+			}
+			slideShow();
+			function showImage(img){
+				document.getElementById('bigImg').src = img;
+				document.getElementById('bigImgDiv').style.display = 'block';	
+			}
+		</script>
+	</div></div>
+	<div id='przyciski'>
+		<div id='aktywny'>
+			<b>Poradnik</b>
+		</div>
+		<a href='tutorial.html'><div id='przycisk'>
+			<b>Tutorial</b>
+		</div></a>
+		<a href='jednostki.html'><div id='przycisk'>
+			<b>Jednostki</b>
+		</div></a>
+		<a href='autorzy.html'><div id='przycisk'>
+			<b>Autorzy</b>
+		</div></a>
+	</div><br><div style='width: 70%; margin-left: 6%;'>
+	<div id='kontener' style='text-align: center;'>
+		<div id="bigImgDiv" style='position: fixed; cursor: pointer; width: 70%; bottom: 80px;' onclick="this.style.display='none'">
+        <img id="bigImg"  style='border-radius: 6px; width: 90%; float: left;'/>
+        </div>
+		<b style='color: #4682B4; font-size: 29px;'>Poradnik</b><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>1. </b><b style='color: #999999;'>Ogólne</b><br></div>
+		Aby zainstalować nowy interfejs oraz filmy wyświetlane przy zgłoszeniach przenieś zawartość folderu _Interfejs Interface do folderu Data znajdującego się w głównym folderze Emergency 4. Folder _Interfejs Interface znajduje się w folderze z modem.<br><br>
+		<img src="img/p15.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Zalecany poziom trudności gry - <b style='color: #4682B4;'>średni</b>.<br><br>
+		Aby zaalarmować JRG musimy zaznaczyć dyspozytora.<br><br>
+		<img src="img/p1.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby zadysponować interesujące nas zastępy, wybieramy ich ikony, a następnie klikamy dzwonek.<br>
+		1. Odesłanie strażaków do koszar<br>
+		2. Otworzenie/zamknięcie dachu<br>
+		3. Włączenie/wyłączenie świateł<br>
+		4. Reset ruchu drogowego (w przypadku zbugowania)<br>
+		5. Reset dźwięków (w przypadku zbugowania)<br>
+		6. Przywrócenie komend pojazdu/postaci (w przypadku zbugowania, <b style='color: #4682B4;'>należy trzymać lewy shift</b> i kliknąć na pojazd/postać)<br><br>
+		<img src="img/p2.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Włączenie/wyłączenie silnika (aby móc włączyć silnik, a także poruszać pojazdem, w samochodzie musi znajdować się jakaś osoba)<br>
+		2. Oświetlenie robocze<br>
+		3. Ubranie strażaków w AODO<br>
+		4. Ubranie strażaka w kamizelkę KDR<br>
+		5. Zamykanie skrytek<br>
+		6. Parkowanie pojazdu w wybranym miejscu<br>
+		7. Sprawdzenie poziomu wody w zbiorniku<br>
+		8. Maszt oświetleniowy<br>
+		9. Fala świetlna<br><br>
+		<img src="img/p10.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Tablica ostrzegawcza<br>
+		2. Patrolowanie mapy<br><br>
+		<img src="img/p102.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby zaalarmować Zespół Ratownictwa Medycznego zaznaczamy stojącą na mapie karetkę, a następnie klikamy w dzwonek (1). Zespół R01 06 można zaalarmować tylko w godzinach 7-23.<br><br>
+		<img src="img/p4.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Przy alarmowaniu jednostek spoza mapy należy wybrać cel dojazdu, gdy wyświetli się informacja. Aby uniknąć klikania na mapę dwukrotnie, najlepiej przy alarmowaniu korzystać z ikony po lewej.<br><br>
+		<img src="img/p24.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p242.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Komenda parkowania pojazdu pozwala na wybranie miejsca, w którym chcemy, żeby pojazd się znalazł. Celem można obracać (1), a następnie należy kliknąć (2), żeby pojazd zaczął parkować. Przez czas wybierania celu sterowanie pojazdem będzie niemożliwe, akcję można anulować za pomocą (3).<br><br>
+		<img src="img/p89.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby rozłożyć podnośnik, należy nacisnąć ikonę rozkładania (1). W pobliżu musi być dostępny wolny strażak (nie może trzymać żadnego sprzętu). W przypadku pojazdu PSP musi być to strażak PSP, w przypadku pojazdu OSP Markowa strażak OSP Markowa.<br><br>
+		<img src="img/p91.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Jeżeli chcemy zainstalować podnośnik na budynek/drzewo, odpowiedni strażak musi znajdować się w pojeździe. Jeżeli cel będzie znajdować się za daleko, żeby podnośnik mógł się do niego zainstalować, po rozłożeniu wyświetlony zostanie komunikat. Żeby złożyć podnośnik należy najpierw opuścić kosz.<br><br>
+		<img src="img/p912.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku zgonu należy zabrać zwłoki zakładem pogrzebowym.<br><br>
+		<img src="img/p872.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>2. </b><b style='color: #999999;'>Wyposażenie</b><br></div>
+		1. Stojak hydrantowy<br>
+		2. Rozdzielacz<br>
+		3. Wycior kominowy<br>
+		4. Parawan<br>
+		5. Nóż do szyb<br>
+		6. Klocki stabilizacyjne<br>
+		7. Pompa szlamowa<br>
+		8. Skokochron (dostępny w podnośnikach oraz 491[R]90)<br>
+		9. Położenie węża na ziemi celem podpięcia kolejnego<br><br>
+		<img src="img/p5.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Wąż<br>
+		2. Tłumica<br>
+		3. Narzędzia hydrauliczne<br>
+		4. Piła łańcuchowa<br>
+		5. Halligan<br>
+		6. Torba PSP-R1<br>
+		7. Deska ortopedyczna<br>
+		8. Sorbent<br>
+		9. Miotła<br>
+		10. Pachołek<br><br>
+		<img src="img/p52.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Kombinezon gazoszczelny<br>
+		2. Pompa beczkowa<br>
+		3. Zbiornik<br><br>
+		<img src="img/p523.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Torba medyczna<br>
+		2. Defibrylator<br>
+		3. Deska ortopedyczna<br>
+		4. Nosze<br><br>
+		<img src="img/p18.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		1. Pachołek<br>
+		2. Torba medyczna<br><br>
+		<img src="img/p3.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby odłożyć wyposażenie zaznaczamy postać i klikamy na pojazd. Jeżeli chcemy odłożyć wąż, <b style='color: #4682B4;'>musimy trzymać lewy shift</b>.<br><br>
+		<img src="img/p21.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Skrytki w wozach otwierają się, gdy wyjmujemy z nich jakiś sprzęt. Aby je zamknąć zaznaczamy pojazd, a następnie klikamy na strażaka (postać musi stać bezczynnie i nie mieć przy sobie żadnego sprzętu).<br><br>
+		<img src="img/p6.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Tak samo dzieje się w przypadku karetek. Aby zamknąć drzwi zaznaczamy karetkę, a następnie klikamy na ratownika.<br><br>
+		<img src="img/p19.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Sprzęt leżący na ziemi po zakończeniu akcji należy podnieść i schować do pojazdu.<br><br>
+		<img src="img/p66.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby w ogóle móc gasić, musimy włączyć w samochodzie autopompę. Jeśli podłączyliśmy wąż do pojazdu, wybieramy wolnego strażaka i klikamy nim na wóz. Podejdzie on do skrytki z autopompą i ją uruchomi. Jeżeli odejdziemy strażakiem od pojazdu, autopompa automatycznie się wyłączy.<br><br>
+		<img src="img/p81.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby ubrać lub zdjąć AODO, wybieramy strażaka, a następnie klikamy na wóz <b style='color: #4682B4;'>trzymając lewy shift</b>. Automatycznie włączy się pobór powietrza z butli i pojawi nam się ikona poziomu powietrza. W momencie skończenia się powietrza w butli nie będzie można dalej gasić i powinniśmy wprowadzić kolejną rotę. Powietrze w butli schodzi co 20%.<br><br>
+		<img src="img/p12.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Powietrze w butli można również napełnić w samochodzie SPgaz.<br><br>
+		<img src="img/p86.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Każdy samochód ma swój własny poziom wody w zbiorniku. Aby nie spadł do zera, musimy podłączyć zasilanie wodne. Możemy to zrobić z hydrantu, jeżeli jest w pobliżu. W tym celu podłączamy wąż do hydrantu i następnie do wozu. Następnie musimy wybrać strażaka i kliknąć na hydrant, żeby go odkręcić. Gdy chcemy odpiąć zasilający wąż od samochodu, musimy najpierw zakręcić hydrant. Robi się to w sposób analogiczny do odkręcania.
+		Możemy również zrobić zasilanie z innego wozu gaśniczego. Wykonuje się to w taki sam sposób, jak przy użyciu hydrantu. Żeby zasilanie działało, należy włączyć autopompę w wozie zasilającym. Zasilania nie można rozbudowywać, jeżeli pojazd jest już zasilany, nie może on zasilać kolejnego pojazdu. <b style='color: #4682B4;'>Odpiąć wąż od samochodu można jedynie takim samym rodzajem strażaka, jakim się go podpięło (taki sam rodzaj ubrania specjalnego, strażak w AODO lub bez). Jeżeli więc nie możesz odpiąć węża, poszukaj strażaków w innych ubraniach specjalnych będących na miejscu zdarzenia. Upewnij się również, że hydrant został zakręcony</b>.<br><br>
+		<img src="img/p11.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p112.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Strażak w kamizelce KDR oraz oficer mają możliwość znajdowania hydrantów w pobliżu (1). Po użyciu komendy hydranty znajdujące się w pobliżu będą zaznaczone strzałką.<br><br>
+		<img src="img/p82.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W modyfikacji dostępne są jedynie hydranty podziemne. Aby móc je użyć, należy zamontować stojak hydrantowy. Po zakończeniu akcji stojak można podnieść i schować do wozu.<br><br>
+		<img src="img/p83.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby użyć rozdzielacza, należy go położyć na ziemi, a następnie podłączyć do niego wąż podłączony do wozu.<br><br>
+		<img src="img/p132.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p84.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Po akcji należy odpiąć wąż od rozdzielacza, a sam rozdzielacz podnieść i schować do wozu. <b style='color: #4682B4;'>Odpiąć wąż od rozdzielacza można jedynie takim samym rodzajem strażaka, jakim się go podpięło (taki sam rodzaj ubrania specjalnego, strażak w AODO lub bez), tak samo jak w przypadku zasilania. To samo tyczy się również węża położonego na ziemi</b>.<br><br>
+		<img src="img/p85.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Aby móc udzielać pomocy poszkodowanym, postać musi trzymać torbę medyczną.<br><br>
+		<img src="img/p87.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Po rozłożeniu parawanu można zmieniać jego ustawienie za pomocą komend.<br><br>
+		<img src="img/p88.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Jeżeli chcemy gasić pianą, musimy wyposażyć strażaka w AODO. Następnie podpinamy wąż do wozu i wybieramy z ekwipunku wytwornicę pianową (1).<br><br>
+		<img src="img/p862.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<b style='color: #4682B4;'>Aby podłączyć wąż do wozu, należy klikać na kabinę. W niektórych wozach podłączenie może być niemożliwe poprzez klikanie na zabudowę.</b><br><br>
+		<div style='text-align: left;'><b style='color: #4682B4;'>3. </b><b style='color: #999999;'>Misje</b><br></div>
+		W ugaszonym samochodzie można odłączyć akumulator. W tym celu otwieramy najpierw maskę za pomocą halligana, a następnie odłączamy akumulator.<br><br>
+		<img src="img/p17.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>		
+		<img src="img/p172.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>		
+		W przypadku wypadków drogowych możemy podłożyć klocki stabilizacyjne, wyciąć szyby za pomocą noża do szyb oraz otworzyć maskę za pomocą halligana i odłączyć akumulator.<br><br>
+		<img src="img/p16.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p162.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p163.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p164.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Jeżeli w pojeździe znajduje się zakleszczona osoba, możemy udzielić jej pomocy za pomocą ratownika medycznego lub lekarza do czasu wydobycia jej przez strażaków.<br><br>
+		<img src="img/p165.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Na koniec należy usunąć plamy oleju oraz uprzątnąć szkło za pomocą sorbentu i miotły.<br><br>
+		<img src="img/p990.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p991.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku wypadków oraz kolizji z udziałem ciężarówek możemy zadysponować zastęp SRChem i wypompować paliwo. W tym celu należy rozstawić zbiornik na samochodzie, a następnie użyć pompy beczkowej.<br><br>
+		<img src="img/p166.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p1662.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Następnie zbiornik należy zabrać lawetą.<br><br>
+		<img src="img/p167.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku wypadków oraz kolizji z udziałem ciężarówek pojazd zabrać można za pomocą zastępu SCRd.<br><br>
+		<img src="img/p168.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku kolizji należy otworzyć maskę pojazdu za pomocą halligana, odpiąć akumulator oraz usunąć plamy oleju i szkło za pomocą sorbentu i miotły.<br><br>
+		<img src="img/p96.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Jeżeli w kolizjach są osoby poszkodowane, należy udzielić im pomocy, a następnie zaprowadzić do karetki.<br><br>
+		<img src="img/p961.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p993.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku ładunku rozsypanego na jezdnię należy uprzątnąć drogę. Skrzynki należy przenieść poza drogę, drzewo pociąć piłą łańcuchową, a resztki gałęzi oraz szkło posprzątać miotłą. Jeżeli jest wyciek oleju, należy zneutralizować go za pomocą sorbentu i miotły. Można również wypompować paliwo za pomocą zastępu SRChem, a ciężarówkę zabrać zastępem SCRd.<br><br>
+		<img src="img/p963.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p962.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku pożaru sadzy należy rozstawić podnośnik na komin, wejść do kosza strażakiem wyposażonym w wycior kominowy i za jego pomocą ugasić pożar.<br><br>
+		<img src="img/p74.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p75.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku zwisającej gałęzi należy rozstawić podnośnik na drzewo, a następnie strażakiem wyposażonym w piłę łańcuchową wejść do kosza i uciąć gałąź. Następnie leżącą na ziemi gałąź należy pociąć.<br><br>
+		<img src="img/p76.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p763.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku zerwanego dachu należy odsunąć resztki blachy na bok, rozstawić podnośnik na budynek i za pomocą strażaka zabezpieczyć dach.<br><br>
+		<img src="img/p761.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p762.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku podtopienia należy wypompować wodę za pomocą pompy szlamowej.<br><br>
+		<img src="img/p77.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku powalonego drzewa należy pociąć drzewo za pomocą piły łańcuchowej, a następnie uprzątnąć resztki za pomocą miotły.<br><br>
+		<img src="img/p772.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku włączonej czujki przeciwpożarowej, po upewnieniu się, że nie ma zagrożenia, należy ją wyłączyć za pomocą strażaka.<br><br>
+		<img src="img/p78.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku wycieku niezidentyfikowanej substancji należy wezwać zastęp SRChem, rozstawić zbiornik, wypompować substancję za pomocą pompy beczkowej, a następnie zabrać zbiornik lawetą, tak jak w przypadku wypadków i kolizji z udziałem ciężarówek.<br><br>
+		<img src="img/p79.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p794.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku plamy oleju należy zneutralizować plamę za pomocą sorbentu i miotły. Następnie należy zabrać zepsuty pojazd za pomocą lawety. W przypadku wycieku z ciężarówki można wypompować paliwo za pomocą zastępu SRChem, a ciężarówkę zabrać zastępem SCRd.<br><br>
+		<img src="img/p792.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku zaburzeń psychicznych należy obezwładnić agresywną osobę za pomocą policjanta, a następnie przekazać ją Zespołowi Ratownictwa Medycznego.<br><br>
+		<img src="img/p793.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Żeby dotrzeć do niektórych poszkodowanych konieczna może być pomoc straży pożarnej, na przykład w celu pocięcia krzaków piłą łańcuchową lub otwarcia drzwi halliganem.<br><br>
+		<img src="img/p994.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p995.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		W przypadku poszkodowanego znajdującego się na dachu należy rozstawić podnośnik na budynek, a następnie za pomocą strażaka wejść na dach i ewakuować poszkodowanego na dół.<br><br>
+		<img src="img/p996.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p997.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		<img src="img/p998.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+		Jeżeli mamy do czynienia ze zmarłą osobą, powinniśmy wybrać lekarza lub ratownika medycznego i kliknąć na nią. Ciało zostanie okryte czarnym workiem i dzięki temu nie będziemy mieli misji nieudanej. Następnie możemy zabrać ciało za pomocą samochodu firmy pogrzebowej.<br><br>
+		<img src="img/p23.jpg" style="cursor: pointer; width: 60%; border-radius: 4px;" onclick="showImage(this.src);" /><br><br>
+	</div>
+	</div></div>
+	<div id='prawa'>
+		<b style='color: #4682B4; font-size: 20px;'>Linki</b><br>
+		<hr style='width: 65%; float: left;'>
+		<br><br>
+		<a href='https://www.facebook.com/sochaczewmod/'><img src='img/sochofb.png' width='60%'></a><br><br>
+		<a href='https://www.youtube.com/user/qretys'><img src='img/yt.png' width='60%'></a><br><br>
+		<a href='http://piecki-mod.prv.pl/sochaczew/'><img src='img/socho.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/zolynia/'><img src='img/zolyn.png' width='60%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/'><img src='img/pmog.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='https://www.facebook.com/groups/557312141062063/'><img src='img/fb.png' width='60%'></a><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Filmy</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/rsV2GvT5ev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/mZoT6Ek7jO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/3b0fanvJqtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/1v5jmY-5AXk?si=Bdootbk6iQKdh-W9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Download</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/8-abwZF4P0w?si=MV80j5h0rRvcSOZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	</div>
+	<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	<div id='stopka'>
+		<img src='img/lancut.png' width='30px' style='float: left; margin-left: 10px;'>
+		<b style='color: #999999'>Łańcut</b> <b style='color: #4682B4'>Modification</b>
+	</div>
+</body>
+</html>

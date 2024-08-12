@@ -1,0 +1,96 @@
+#kontener{
+	width: 90%;
+	border-top-style: solid;
+	border-top-color: #4682B4;
+	border-top-width: 8px;
+	float: left;
+	padding: 30px;
+	background-color: #262626;
+	border-radius: 0px 0px 6px 6px;
+	}
+body{
+	background-color:  #404040;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	color: white;
+}
+#stopka{
+	width: 100%;
+	height: 40px;
+	border-top-style: solid;
+	border-top-color: #4682B4;
+	background-color: #404040;
+	position: fixed;
+	text-align: center;
+	padding: 5px;
+    position: fixed;
+	bottom: 0;
+	left:0;
+}
+#przyciski{
+	width: 550px;
+	height:40px;
+	margin: auto;
+}
+#przycisk{
+	width:130px;
+	height:24px;
+	background-color: #262626;
+	color: #4682B4;
+	padding: 2px;
+	text-align: center;
+	border-bottom-color: #4682B4;
+	border-bottom-style: solid;	
+	border-width: 6px;
+	display: inline-block;
+}
+#aktywny{
+	width:130px;
+	height:24px;
+	background-color: #333333;
+	color: #46a1fa;
+	padding: 2px;
+	text-align: center;
+	border-bottom-color: #46a1fa;
+	border-bottom-style: solid;	
+	border-width: 6px;
+	display: inline-block;
+}
+#fotka{
+	width: 100%;
+	height: 400px;
+	background-color: #1a1a1a;
+	
+}
+#img{
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#img.fadeOut{
+    opacity:0;
+}
+#zol{
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#zol.fadeOut{
+    opacity:0;
+}
+#przerwa{
+	width: 20%;
+}
+#prawa{
+	margin: auto;
+	width: 20%;
+	float: right;
+	padding-right: 40px;
+}
+hr{
+	border-color: #4682B4;
+}

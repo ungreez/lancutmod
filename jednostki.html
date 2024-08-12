@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Lancut Modification</title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<link rel="shortcut icon" href="img/sochaczew.png" />	
+</head>
+<body>
+	<div id='fotka'>
+	<center><div><img src='img/0.jpg' id='img'></center>
+		<script>
+			curIndex = 0;
+			var imgArray = ['img/0.jpg','img/1.jpg','img/10.jpg','img/3.jpg','img/9.jpg','img/5.jpg','img/8.jpg','img/7.jpg','img/6.jpg','img/2.jpg','img/4.jpg']
+			function slideShow() {
+				document.getElementById('img').className += "fadeOut";
+				setTimeout(function() {
+				document.getElementById('img').src = imgArray[curIndex];
+				document.getElementById('img').className = "";
+				},800);
+				curIndex++;
+			if (curIndex == imgArray.length){
+				curIndex = 0; 
+			}
+			setTimeout(slideShow, 10000);
+			}
+			slideShow();
+			function showImage(img){
+				document.getElementById('bigImg').src = img;
+				document.getElementById('bigImgDiv').style.display = 'block';	
+			}
+		</script>
+	</div></div>
+	<div id='przyciski'>
+		<a href='poradnik.html'><div id='przycisk'>
+			<b>Poradnik</b>
+		</div></a>
+		<a href='tutorial.html'><div id='przycisk'>
+			<b>Tutorial</b>
+		</div></a>
+		<div id='aktywny'>
+			<b>Jednostki</b>
+		</div>
+		<a href='autorzy.html'><div id='przycisk'>
+			<b>Autorzy</b>
+		</div></a>
+	</div><br><div style='width: 70%; margin-left: 6%;'>
+	<div id='kontener'>
+		<div id="bigImgDiv" style='position: fixed; cursor: pointer; width: 70%; bottom: 80px;' onclick="this.style.display='none'">
+        <img id="bigImg"  style='border-radius: 6px; width: 90%; float: left;'/>
+        </div>
+		<div style="text-align: center;"><b style='color: #999999; font-size: 24px;'>Jednostki dostępne w </b><b style='color: #4682B4; font-size: 24px;'>modyfikacji</b><br><br>
+		<b style='color: #4682B4; font-size: 22px;'>Straż Pożarna</b></div>
+		<img src='img/lancut.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>JRG Łańcut</b><br><br>
+		
+		<img src="img/21.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>491[R]21 </b>GBA 3/29 MAN TGM 18.320/MotoTruck<br><br>
+		<img src="img/22.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>491[R]22 </b>GBA 2,5/30 Scania P360/ISS Wawrzaszek<br><br>
+		<img src="img/25.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>491[R]25 </b>GCBA 5/32 Scania P370/PS Szczęśniak<br><br>
+		<img src="img/50.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>491[R]50 </b>SPgaz Iveco Eurocargo/Zamet Głowno<br><br>
+		<img src="img/53.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>491[R]53 </b>SHD-25 MAN TGL 12.250/Bumar Koszalin<br><br>
+		<img src="img/90.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>491[R]90 </b>SLRr Nissan Navara<br><br>
+		<img src="img/91.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>490[R]91 </b>SLOp Mitsubishi Outlander<br><br>
+		
+		<img src='img/rzeszow.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>JRG 2 Rzeszów</b><br><br>
+		<img src="img/253.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>322[R]53 </b>SHD-25 Volvo FL220/Bumar Koszalin<br><br>
+		
+		<img src='img/rzeszow.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>JRG 3 Rzeszów</b><br><br>
+		<img src="img/325.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>323[R]25 </b>GCBA 10/61 Scania P450/PS Szczęśniak<br><br>
+		<img src="img/54.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>321[R]54 </b>SCHD-42 Scania P360/Bumar Koszalin<br><br>
+		
+		<img src='img/lezajsk.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>JRG Leżajsk</b><br><br>
+		<img src="img/64.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>471[R]64 </b>SRChem Scania G410/PS Szczęśniak<br><br>
+		
+		<img src='img/jaroslaw.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>JRG Jarosław</b><br><br>
+		<img src="img/49.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>431[R]49 </b>SCRd Renault K520/PS Szczęśniak<br><br>
+		
+		<img src='img/lancutt.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Albigowa</b><br><br>
+		<img src="img/66.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]66 </b>GBA 3/16 Iveco Eurocargo/MotoTruck<br><br>
+		<img src="img/67.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]67 </b>GCBA 5/24 Jelcz 442/JZS<br><br>
+		<img src='img/lancutt.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Handzlówka</b><br><br>
+		<img src="img/61.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]61 </b>GBA 3/28 Renault D15/PS Szczęśniak<br><br>
+		<img src='img/lancutt.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Kraczkowa</b><br><br>
+		<img src="img/69.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]69 </b>GBA 3/16 MAN TGM 13.290/MotoTruck<br><br>
+		
+		<img src='img/czarna.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Krzemienica</b><br><br>
+		<img src="img/921.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]21 </b>GBA 3/16 Volvo FL 280/Bocar<br><br>
+		<img src='img/czarna.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Medynia Głogowska</b><br><br>
+		<img src="img/922.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]22 </b>GBA 3/16 MAN TGM 13.290/MotoTruck<br><br>
+		
+		<img src='img/markowa.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Markowa</b><br><br>
+		<img src="img/33.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]33 </b>GBA 3/30 Scania P360/ISS Wawrzaszek<br><br>
+		<img src="img/34.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]34 </b>GCBA 5/32 Scania P380/ISS Wawrzaszek<br><br>
+		<img src="img/36.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]36 </b>SH-18 Star 200/Bumar Koszalin<br><br>
+		<img src='img/markowa.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Husów</b><br><br>
+		<img src="img/31.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]31 </b>GBA 2/20 Renault Midliner M210/ISS Wawrzaszek<br><br>	
+		
+		<img src='img/bialobrzegi.svg' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Białobrzegi</b><br><br>
+		<img src="img/901.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]01 </b>GCBA 5/24 Jelcz 422/JZS<br><br>
+		<img src="img/902.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]02 </b>GLBM Renault Master dCi 150/Bibmot Mielec<br><br>
+		
+		<img src='img/rakszawa.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Rakszawa</b><br><br>
+		<img src="img/941.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]41 </b>GBA 3/16 Volvo FL 280/Bocar<br><br>
+		<img src="img/942.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]42 </b>GCBA 6/32 Jelcz 004/JZS<br><br>
+		<img src="img/943.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]43 </b>GLM Renault Master dCi 150/Bibmot Mielec<br><br>
+		
+		<img src='img/zolynia.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Żołynia</b><br><br>
+		<img src="img/951.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]51 </b>GBA 2,5/16 Mercedes-Benz 1222/Ziegler<br><br>
+		<img src="img/952.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>499[R]52 </b>GBA 2,5/24 Renault Midlum/ISS Wawrzaszek<br><br>
+		<img src='img/zolynia.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Kopanie Żołyńskie</b><br><br>
+		<img src="img/856.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>498[R]56 </b>GBM 2,5/8 Star 244/JZS<br><br>
+		
+		<img src='img/trzebownisko.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>OSP Stobierna</b><br><br>
+		<img src="img/40.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>339[R]40 </b>GBA 3/27 Scania P360/ISS Wawrzaszek<br><br>
+
+
+		<br><div style='text-align: center;'><b style='color: #4682B4; font-size: 22px;'>Pogotowie Ratunkowe</b></div>
+		<img src='img/rzeszow.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>Wojewódzka Stacja Pogotowia Ratunkowego w Rzeszowie</b><br><br>
+		<img src="img/0103.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 03 </b>Mercedes-Benz Sprinter/Auto-Form - MS Łańcut<br><br>
+		<img src="img/0106.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 06 </b>Mercedes-Benz Sprinter/Auto-Form - MS Łańcut<br><br>
+		<img src="img/0108.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 08 </b>Renault Master/Auto-Form - MS Łańcut Podzwierzyniec<br><br>
+		<img src="img/0120.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 20 </b>Mercedes-Benz Sprinter/Auto-Form - MS Rzeszów Poniatowskiego (pojazd rezerwowy)<br><br>
+		<img src="img/0126.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 26 </b>Volkswagen Crafter/WAS - MS Rzeszów Lwowska (pojazd rezerwowy)<br><br>
+		<img src="img/0102.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 02 </b>Volkswagen Crafter/Auto-Form - MS Leżajsk<br><br>
+		<img src="img/01178.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 178 </b>Mercedes-Benz Sprinter/WAS - MS Hyżne<br><br>
+		<img src='img/przemysl.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>Wojewódzka Stacja Pogotowia Ratunkowego w Przemyślu</b><br><br>
+		<img src="img/01158.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 158 </b>Mercedes-Benz Sprinter/Auto-Form - MS Przeworsk<br><br>
+		<img src="img/01160.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 160 </b>Volkswagen Crafter/Auto-Form - MS Przewosrk<br><br>
+		<img src="img/01162.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>R01 162 </b>Volkswagen Crafter/Auto-Form - MS Kańczuga<br><br>
+		<img src='img/sanok.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>HEMS Sanok</b><br><br>
+		<img src="img/lpr.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>Ratownik 10 </b>Eurocopter EC-135 - MS Sanok<br><br>
+		<b style='color: #999999; font-size: 20px;'>Inne</b><br><br>
+		<img src="img/eden.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>Karawan </b>Mercedes-Benz Vito<br><br>
+		<br><div style='text-align: center;'><b style='color: #4682B4; font-size: 22px;'>Policja</b></div>	
+		<img src='img/lancut.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>Policja Łańcut</b><br><br>
+		<img src="img/corolla.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K804 </b>Toyota Corolla<br><br>
+		<img src="img/kiasw.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K815 </b>Kia Ceed SW<br><br>
+		<img src="img/sorento.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K801 </b>Kia Sorento<br><br>
+		<img src="img/yeti.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K818 </b>Skoda Yeti<br><br>
+		<img src="img/caddy.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K807 </b>Volkswagen Caddy<br><br>
+		<img src="img/t6.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K802 </b>Volkswagen T6<br><br>
+		<img src="img/ducato.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K810 </b>Fiat Ducato<br><br>
+		<img src='img/rzeszow.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>Policja Rzeszów</b><br><br>
+		<img src="img/aprd.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br><b style='color: #4682B4;'>K103 </b>Volkswagen Crafter<br><br>
+		<br><div style='text-align: center;'><b style='color: #4682B4; font-size: 22px;'>Lawety</b></div>	
+		<img src='img/rakszawa.png' style='width: 10%;'><b style='color: #999999; font-size: 20px;'>RakPol Rakszawa</b><br><br>
+		<img src="img/iveco.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br>Iveco Eurocargo<br><br>
+		<img src="img/vario.jpg" style="cursor: pointer; width: 40%; border-radius: 4px;" onclick="showImage(this.src);" /><br>Mercedes-Benz Vario<br><br>
+	</div>
+	</div></div>
+	<div id='prawa'>
+		<b style='color: #4682B4; font-size: 20px;'>Linki</b><br>
+		<hr style='width: 65%; float: left;'>
+		<br><br>
+		<a href='https://www.facebook.com/sochaczewmod/'><img src='img/sochofb.png' width='60%'></a><br><br>
+		<a href='https://www.youtube.com/user/qretys'><img src='img/yt.png' width='60%'></a><br><br>
+		<a href='http://piecki-mod.prv.pl/sochaczew/'><img src='img/socho.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/zolynia/'><img src='img/zolyn.png' width='60%'></a><br><br><br>
+		<a href='http://piecki-mod.prv.pl/'><img src='img/pmog.png' width='50%' style='margin-left: 10%'></a><br><br><br>
+		<a href='https://www.facebook.com/groups/557312141062063/'><img src='img/fb.png' width='60%'></a><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Filmy</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/rsV2GvT5ev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/mZoT6Ek7jO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/3b0fanvJqtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/1v5jmY-5AXk?si=Bdootbk6iQKdh-W9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br>
+		
+		
+		<b style='color: #4682B4; font-size: 20px; text-align: center;'>Download</b><br>
+		<hr style='width: 65%; float: left;'><br><br>
+		<iframe width="65%" src="https://www.youtube.com/embed/8-abwZF4P0w?si=MV80j5h0rRvcSOZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	</div>
+	<div id='przerwa'>
+		&nbsp;<br>&nbsp;<br>&nbsp;
+	</div>
+	<div id='stopka'>
+		<img src='img/lancut.png' width='30px' style='float: left; margin-left: 10px;'>
+		<b style='color: #999999'>Łańcut</b> <b style='color: #4682B4'>Modification</b>
+	</div>
+</body>
+</html>
